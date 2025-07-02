@@ -1,7 +1,4 @@
-
-
 import { AppBar, Button, Toolbar } from "@mui/material"
-import Link from "next/link"
 
 interface NavigationProps{
     scrollToSection:(sectionId:string)=>void;
@@ -24,8 +21,8 @@ export default function Navigation({scrollToSection} : NavigationProps) {
                 mr:2}}>
                     Главная
                 </Button>
+
                 <Button 
-                
                 color="inherit"
                 onClick={()=> scrollToSection('about')}
                 sx={{ textTransform:'none', fontSize:'1rem'}}>
